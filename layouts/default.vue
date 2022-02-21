@@ -1,9 +1,7 @@
 <template>
-  <div class="w-screen">
-    <LayoutsHeader />
+  <div class="container mx-auto w-3/4">
+    <HeadersDefault />
     <nuxt />
-    <div class="w-full border flex justify-center">
-      <div class="container text-center border">footer</div>
-    </div>
+    <FootersDefault />
   </div>
 </template>
