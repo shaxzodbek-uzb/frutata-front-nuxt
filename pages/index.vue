@@ -2,9 +2,9 @@
   <div>
     <!-- Slider -->
     <section class="flex justify-between pt-12">
-      <div>
-        <div class="py-12">
-          <span class="text-4xl font-bold pt-12">
+      <div class=" w-1/2">
+        <div class="py-12  ">
+          <span class="text-5xl leading-11 font-bold pt-12 font-yanone">
             Производство сублимированных <p class="font-break">фруктов в Узбекистане</p>
           </span>
         </div>
@@ -14,24 +14,31 @@
           <p class="font-break"> на свою короткую историю мы являемся одним из немногих производителей</p>
           </p>
         </div>
-        <div class="flex pt-10">
-          <div class="bg-[url('~/static/img/Ellipse.png')] bg-no-repeat bg-[length:160px_160px] px-8">
-            <p class="text-7xl font-bold pt-6">21+</p>
-            <p class="pb-8">Разновидностей Frutata</p>
+        <div class="flex pt-10  font-yanone justify-start">
+          <div class=" relative w-1/3">
+            <p class="text-8xl font-bold ">21+</p>
+            <p class="max-w-1/2">Разновидностей Frutata</p>
+            <img src="img/ellipse.png" class="absolute w-36 h-auto top-0 left-0 -z-10">
           </div>
-          <div class="bg-[url('img/Ellipse.png')] bg-no-repeat bg-[length:160px_160px]">
-            <p class="text-7xl font-bold pt-6">100%</p>
-            <p class="pb-8">Экологический продукт</p>
+          <div class=" relative w-1/3">
+            <p class="text-8xl font-bold pt-6">100%</p>
+            <p class="max-w-1/2">Экологический продукт</p>
+            <img src="img/ellipse.png" class="absolute w-36 h-auto top-0 left-0 -z-10">
           </div>
         </div>
       </div>
-      <div class="flex ">
-        <img src="img/1.png" alt="">
+
+      <div class="flex  w-1/2 justify-center items-center">
+      <div>
+
+        <img src="img/main_image.png">
+      </div>
       </div>
     </section>
+     
 
     <section class="pt-12">
-      <div class="width-full h-44 bg-gradient-to-r from-amber-100 rounded-xl flex">
+      <div class="width-full h-44 bg-gradient-to-tr from-lightGreen to-ultraLigtGreen rounded-xl flex">
         <div class="pt-12 w-1/5 px-4">
           <img class="w-56" src="logo/frulogo.svg" alt="">
         </div>

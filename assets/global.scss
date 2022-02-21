@@ -1,7 +1,14 @@
 @font-face {
     font-family: "Comfortaa";
     src: local("Comfortaa"),     url(~static/fonts/ComfortaaVariableFont.ttf) format("truetype");}
+// YanoneKaffeesatzVariableFont.ttf
+@font-face {
+    font-family: "YanoneKaffeesatz";
+    src: local("YanoneKaffeesatz"),     url(~static/fonts/YanoneKaffeesatzVariableFont.ttf) format("truetype");}
 
 html {
     font-family: "Comfortaa";
+}
+.font-yanone{
+    font-family: "YanoneKaffeesatz";
 }

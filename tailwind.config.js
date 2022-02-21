@@ -5,6 +5,17 @@ module.exports = {
         extend: {
             colors: {
                 primary: '#93c92b',
+                lightGreen: '#fff2c2',
+                ultraLightGreen: '#fffcf1',
+            },
+            lineHeight: {
+                '11': '3.75rem',
+            },
+            zIndex: {
+                '-10': -10,
+            },
+            maxWidth: {
+                '1/2': '50%',
             }
         },
         container: {
