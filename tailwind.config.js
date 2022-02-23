@@ -7,6 +7,12 @@ module.exports = {
                 primary: '#93c92b',
                 lightGreen: '#fff2c2',
                 ultraLightGreen: '#fffcf1',
+                lime200: '#d9f99d',
+                lime500: '#84cc16',
+                lime600: '#65a30d',
+                amber200: '#fde68a',
+                amber100: '#fef3c7',
+
             },
             lineHeight: {
                 '11': '3.75rem',
