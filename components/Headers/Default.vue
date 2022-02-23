@@ -8,36 +8,32 @@
         </a>
       </div>
       <div class="py-4">
-        <ul class="flex px-10">
-          <li class="px-6 hover:text-lime-500">
+        <ul class="flex px-4">
+          <li class="px-6 hover:text-lime500">
             <a href>Главная</a>
           </li>
-          <li class="px-6 hover:text-lime-500">
+          <li class="px-6 hover:text-lime500">
             <a href>О компании</a>
           </li>
-          <li class="px-6 hover:text-lime-500">
+          <li class="px-6 hover:text-lime500">
             <a href>Продукции</a>
           </li>
-          <li class="px-6 hover:text-lime-500 mr-12">
+          <li class="px-6 hover:text-lime500 mr-12">
             <a href>Контакты</a>
           </li>
         </ul>
       </div>
-      <div class="py-1 pl-12">
-        <span class="fa-stack fa-lg bg-lime-400 rounded-full">
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </span>
-        <span class="fa-stack fa-lg bg-lime-400 rounded-full">
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </span>
-        <span class="fa-stack fa-lg bg-lime-400 rounded-full">
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </span>
+      <div class="flex py-5">
+        <ul class="flex text-sm">
+          <li class="pr-2 hover:text-lime600"><a href="#">Uz</a></li>
+          <li class="pr-2 hover:text-lime600"><a href="#">Ru</a></li>
+          <li class="hover:text-lime600"><a href="#">En</a></li>
+        </ul>
       </div>
-      <div class="pl-10 px-10">
-        <span>Связаться с нами:</span>
+      <div class="pl-8 px-10">
+        <span class="text-sm text-lime500">Связаться с нами:</span>
         <br />
-        <span>+998 99 999 99 99</span>
+        <span class="text-sm">+998 99 999 99 99</span>
       </div>
     </header>
   </div>
