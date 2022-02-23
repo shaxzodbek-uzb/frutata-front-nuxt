@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container mx-auto w-3/4">
       <HeadersDefault />
+    <div class="container mx-auto w-3/4">
       <nuxt />
     </div>
     <FootersDefault />
