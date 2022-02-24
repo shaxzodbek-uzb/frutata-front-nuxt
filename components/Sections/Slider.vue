@@ -1,6 +1,6 @@
 <template>
     <div>
-         <section class="flex justify-between pt-12">
+      <section class="flex justify-between pt-12">
       <div class=" w-1/2">
         <div class="py-12  ">
           <span class="text-5xl leading-11 font-bold pt-12 font-yanone">
@@ -9,12 +9,12 @@
         </div>
         <div class="pt-6">
           <p>
-            Компания Frutata — новичок на рынке Узбекистана, однако несмотря
-          <p class="font-break"> на свою короткую историю мы являемся одним из немногих производителей</p>
+              Компания Frutata — новичок на рынке Узбекистана, однако несмотря
+             на свою короткую историю мы являемся одним из немногих производителей
           </p>
         </div>
         <div class="flex pt-10  font-yanone justify-start">
-          <div class=" relative w-1/3">
+          <div class="relative w-1/3">
             <p class="text-8xl font-bold ">21+</p>
             <p class="max-w-1/2">Разновидностей Frutata</p>
             <img src="img/ellipse.png" class="absolute w-36 h-auto top-0 left-0 -z-10">

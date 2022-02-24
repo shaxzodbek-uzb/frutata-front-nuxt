@@ -16,12 +16,19 @@ module.exports = {
             },
             lineHeight: {
                 '11': '3.75rem',
+                '14': '3.5rem',
+                '15': '3.75rem',
+                '16': '4rem',
             },
             zIndex: {
                 '-10': -10,
             },
             maxWidth: {
                 '1/2': '50%',
+            },
+            padding: {
+                '21px': '21px',
+                '121px': '121px'
             }
         },
         container: {
