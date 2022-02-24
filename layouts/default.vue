@@ -1,9 +1,15 @@
 <template>
-  <div class="w-screen">
+  <Wrapper>
+
     <LayoutsHeader />
-    <nuxt />
-    <div class="w-full border flex justify-center">
-      <div class="container text-center border">footer</div>
-    </div>
-  </div>
+    <LayoutsSlider />
+    <LayoutsAboutCompany />
+    <LayoutsProductSlider />
+    <LayoutsAboutUs />
+    <LayoutsJarPackage />
+    <LayoutsPartners />
+    <LayoutsContacts />
+    <LayoutsFooter />
+
+  </Wrapper>
 </template>
