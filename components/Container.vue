@@ -1,11 +1,11 @@
 <template>
-  <div>
-
+  <div class="container mx-auto">
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'Container'
 }
 </script>

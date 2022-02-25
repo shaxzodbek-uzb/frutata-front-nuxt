@@ -1,14 +1,17 @@
 @font-face {
     font-family: "Comfortaa";
-    src: local("Comfortaa"),     url(~static/fonts/ComfortaaVariableFont.ttf) format("truetype");}
-// YanoneKaffeesatzVariableFont.ttf
-@font-face {
-    font-family: "YanoneKaffeesatz";
-    src: local("YanoneKaffeesatz"),     url(~static/fonts/YanoneKaffeesatzVariableFont.ttf) format("truetype");}
-
-html {
-    font-family: "Comfortaa";
+    src: local("Comfortaa"),     url(~static/fonts/ComfortaaVariableFont.ttf) format("truetype");
 }
-.font-yanone{
-    font-family: "YanoneKaffeesatz";
+@font-face {
+  font-family: "YanoneKaffeesatz";
+  src: local("YanoneKaffeesatz"),     url(~static/fonts/YanoneKaffeesatz-VariableFont_wght.ttf) format("truetype");
+}
+.Comfortaa {
+  font-family: "Comfortaa";
+}
+.YanoneKaffeesatz {
+  font-family: "YanoneKaffeesatz";
+}
+.TransformTranlateX {
+  transform: translateX(-50%);
 }

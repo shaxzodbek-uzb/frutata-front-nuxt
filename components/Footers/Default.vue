@@ -1,9 +1,9 @@
 <template>
   <div>
-    <footer class="bg-lime-600 w-full h-48">
+    <footer class="bg-lime600 w-full h-48 text-sm">
       <div class="container mx-auto flex">
-        <div class="w-1/6 h-48">
-          <img src="logo/frutatalogowhite.png" class="w-56 py-8" alt="">
+        <div class="flex justify-center items-center w-1/6 h-36">
+          <img src="logo/frutatalogowhite.png" class="w-40 py-8" alt="">
         </div>
         <div class="w-1/6 text-white ">
           <ul>
