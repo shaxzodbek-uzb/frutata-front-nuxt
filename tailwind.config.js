@@ -17,6 +17,7 @@ module.exports = {
                 amber100: '#fef3c7',
                 'red-text': '#d72323',
                 'alert-lime': '#f5fff1',
+                'alert-silver': '#dee2e6',
             },
             lineHeight: {
                 '2.5': '2.50rem',
@@ -36,8 +37,12 @@ module.exports = {
                 '121px': '121px',
                 '102px': '102px'
             },
+            height:{
+                '60px': '60px',
+            },
             width: {
-              '180px': '180px',
+                '180px': '180px',
+                '60px': '60px',
             }
         },
         container: {
