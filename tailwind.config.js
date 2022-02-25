@@ -3,6 +3,9 @@
 module.exports = {
     theme: {
         extend: {
+            fontSize:{
+                '4x2': '2.50rem',
+            },
             colors: {
                 primary: '#93c92b',
                 lightGreen: '#fff2c2',
@@ -12,9 +15,11 @@ module.exports = {
                 lime600: '#65a30d',
                 amber200: '#fde68a',
                 amber100: '#fef3c7',
-
+                'red-text': '#d72323',
+                'alert-lime': '#f5fff1',
             },
             lineHeight: {
+                '2.5': '2.50rem',
                 '11': '3.75rem',
                 '14': '3.5rem',
                 '15': '3.75rem',
@@ -29,6 +34,9 @@ module.exports = {
             padding: {
                 '21px': '21px',
                 '121px': '121px'
+            },
+            width: {
+              '180px': '180px',
             }
         },
         container: {

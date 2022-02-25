@@ -6,7 +6,7 @@
         <div class="flex flex-row justify-between py-21px">
           <div class="basis-[50%]">
             <a href>
-              <img src="logo/frulogo.svg" alt />
+              <img src="logo/frutatalogo.png" alt />
             </a>
           </div>
           <div class="leading-15">
