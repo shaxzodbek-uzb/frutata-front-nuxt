@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Navbar -->
-    <header class="border-b border-primary ease-in duration-300">
+    <header class="border-b border-primary ease-in duration-300 fixed w-full bg-white">
       <div class="container mx-auto">
         <div class="flex flex-row justify-between py-21px">
           <div class="basis-[50%]">
@@ -47,6 +47,7 @@
         </div>
       </div>
     </header>
+    <div class="pt-102px"></div>
   </div>
 </template>
 
