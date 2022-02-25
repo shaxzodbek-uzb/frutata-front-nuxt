@@ -1,51 +1,15 @@
 <template>
-  <div class="w-full border-b border-Green26 mb-12">
+  <div class="w-full">
     <Container>
-      <div class="flex min-h-100 Comfortaa">
-        <div class="flex-none flex items-center mr-5">
-          <a href="#">
-            <img src="/head_logo.png" alt="Futata" class="max-w-129">
-          </a>
-        </div>
-        <div class="flex flex-grow">
-          <div class="flex flex-grow">
-            <div class="flex flex-grow">
-              <div class="flex-grow flex items-center">
-                <div class="w-full">
-                  <ul class="flex">
-                    <li class="text-15 leading-16 ml-5 mr-5 active-link">
-                      <a href="#">Главная</a>
-                    </li>
-                    <li class="text-15 leading-16 ml-5 mr-5">
-                      <a href="#">Продукции</a>
-                    </li>
-                    <li class="text-15 leading-16 ml-5 mr-5">
-                      <a href="#">О компании</a>
-                    </li>
-                    <li class="text-15 leading-16 ml-5 mr-5">
-                      <a href="#">Новости</a>
-                    </li>
-                    <li class="text-15 leading-16 ml-5 mr-5">
-                      <a href="#">Контакты</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="flex-none flex items-center">
-                <div class="mr-7">
-                  <ul class="flex">
-                    <li class="text-15 leading-16 m-2.5 active-lang">
-                      <a href="#">Ру</a>
-                    </li>
-                    <li class="text-15 leading-16 m-2.5 text-black">
-                      <a href="#">En</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+      <div class="flex flex-row Comfortaa justify-between py-14">
+        <div class="flex flex-1 flex-row">
+          <div class="flex flex-col flex-none items-center justify-start mr-14">
+            <div class="mb-10">
+              <p class="text-50 leading-50 text-black font-bold YanoneKaffeesatz">Контакты</p>
             </div>
-            <div class="flex-none flex items-center">
-              <div>
+            <div class="flex flex-col text-center">
+              <p class="text-15 leading-17 text-black font-bold mb-5">Мы в соц. сетях:</p>
+              <div class="flex flex-row">
                 <ul class="flex">
                   <li class="flex-1 m-3">
                     <a href="#">
@@ -75,12 +39,19 @@
               </div>
             </div>
           </div>
-          <div class="flex-none flex items-center">
-            <div class="ml-4">
-              <p class="text-13 leading-14 text-Green">Связаться с нами</p>
-              <p class="text-15 leading-16 mt-1.5 text-black">+998 90 995 5959</p>
+          <div class="flex flex-col flex-none ml-11">
+            <div class="flex flex-col mb-10">
+              <p class="text-15 leading-17 text-black font-bold mb-5">Связаться с нами:</p>
+              <p class="text-15 leading-20 text-Green font-bold">+998 90 995 5959</p>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-15 leading-17 text-black font-bold mb-5">Адрес:</p>
+              <p class="text-15 leading-20 text-Green font-bold max-2-44">Махалля Файзабад,<br> улица, Fargona Road</p>
             </div>
           </div>
+        </div>
+        <div class="flex flex-1 ml-5 max-w-592">
+            <iframe class="rounded-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4503888345903!2d69.25662371587268!3d41.3208186792703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b147cca7093%3A0xef83733beeec731b!2z0L_RgNC-0YHQv9C10LrRgiDQndCw0LLQvtC4LCDQotCw0YjQutC10L3Rgiwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1645711833621!5m2!1sru!2s" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </Container>
@@ -89,15 +60,10 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Contacts"
 }
 </script>
 
 <style lang="postcss">
-.active-link {
-  @apply text-Green;
-}
-.active-lang {
-  @apply text-Green;
-}
+
 </style>

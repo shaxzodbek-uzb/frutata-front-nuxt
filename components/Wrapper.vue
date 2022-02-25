@@ -1,11 +1,11 @@
 <template>
-  <div>
-
+  <div class="w-full overflow-hidden">
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'Wrapper'
 }
 </script>

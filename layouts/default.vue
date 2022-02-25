@@ -1,9 +1,15 @@
 <template>
-  <div>
-      <HeadersDefault />
-    <div class="container mx-auto w-3/4">
-      <nuxt />
-    </div>
-    <FootersDefault />
-  </div>
+  <Wrapper>
+
+    <LayoutsHeader />
+    <LayoutsSlider />
+    <LayoutsAboutCompany />
+    <LayoutsProductSlider />
+    <LayoutsAboutUs />
+    <LayoutsJarPackage />
+    <LayoutsPartners />
+    <LayoutsContacts />
+    <LayoutsFooter />
+
+  </Wrapper>
 </template>
