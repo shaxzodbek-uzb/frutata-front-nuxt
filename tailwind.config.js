@@ -65,9 +65,6 @@ module.exports = {
             current: 'current',
             black: '#000',
             white: '#fff',
-            // 'bg-primary-900'
-            // 'bg-red-text'
-            // 'text-red-text'
             primary: {
                 900: '#93c92b',
                 500: '#fff2c2',

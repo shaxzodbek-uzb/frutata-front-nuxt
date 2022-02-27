@@ -1,6 +1,12 @@
 <template>
   <div>
-
+    <Slider />
+    <AboutCompany />
+    <ProductSlider />
+    <AboutUs />
+    <JarPackage />
+    <Partners />
+    <Contacts />
   </div>
 </template>
 

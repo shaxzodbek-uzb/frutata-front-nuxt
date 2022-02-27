@@ -1,15 +1,7 @@
 <template>
   <Wrapper>
-
     <LayoutsHeader />
-    <LayoutsSlider />
-    <LayoutsAboutCompany />
-    <LayoutsProductSlider />
-    <LayoutsAboutUs />
-    <LayoutsJarPackage />
-    <LayoutsPartners />
-    <LayoutsContacts />
+    <nuxt-child />
     <LayoutsFooter />
-
   </Wrapper>
 </template>
