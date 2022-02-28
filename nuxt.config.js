@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'}
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
     ],
   },
 
@@ -40,8 +40,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/image',
+    '@nuxtjs/i18n',
   ],
-
+  i18n: {
+    locales: [
+      {
+        code: 'uz',
+        file: 'uz.js'
+      },
+      {
+        code: 'ru',
+        file: 'ru.js'
+      },
+      {
+        code: 'en',
+        file: 'en.js'
+      }
+    ],
+    defaultLocale: 'uz',
+    langDir: 'lang/',
+    vueI18n: {
+      fallbackLocale: 'uz',
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Slider />
-    <AboutCompany />
-    <ProductSlider />
-    <AboutUs />
-    <JarPackage />
-    <Partners />
-    <Contacts />
+    <IndexBanner />
+    <IndexAboutCompany />
+    <IndexProducts />
+    <IndexAboutUs />
+    <IndexJarPackage />
+    <IndexPartners />
+    <IndexContacts />
   </div>
 </template>
 

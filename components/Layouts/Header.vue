@@ -26,12 +26,24 @@
               </div>
               <div class="flex-none flex items-center">
                 <div class="mr-7">
-                  <ul class="flex">
-                    <li class="text-15 leading-16 m-2.5 active-lang">
-                      <a href="#">Ру</a>
+                  <ul class="flex text-black">
+                    <li
+                      class="text-15 leading-16 m-2"
+                      :class="{'active-lang': $i18n.locale == 'ru'}"
+                    >
+                      <nuxt-link :to="switchLocalePath('ru')">Ру</nuxt-link>
                     </li>
-                    <li class="text-15 leading-16 m-2.5 text-black">
-                      <a href="#">En</a>
+                    <li
+                      class="text-15 leading-16 m-2"
+                      :class="{'active-lang': $i18n.locale == 'en'}"
+                    >
+                      <nuxt-link :to="switchLocalePath('en')">En</nuxt-link>
+                    </li>
+                    <li
+                      class="text-15 leading-16 m-2"
+                      :class="{'active-lang': $i18n.locale == 'uz'}"
+                    >
+                      <nuxt-link :to="switchLocalePath('uz')">Uz</nuxt-link>
                     </li>
                   </ul>
                 </div>
