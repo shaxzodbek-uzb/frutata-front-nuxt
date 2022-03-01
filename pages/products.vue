@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <div>
         <div class="flex w-full">
             <h1 class="text-5xl leading-11 font-bold pt-12 font-yanone mb-12">
@@ -23,4 +24,7 @@
             </div>
         </div>
     </div>
+=======
+  <ProductSlider />
+>>>>>>> upstream/master
 </template>
