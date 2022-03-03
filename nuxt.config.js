@@ -1,4 +1,17 @@
 export default {
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
+    },
+    baseURL: process.env.BASE_URL,
+    storeURL: process.env.STORE_URL,
+  },
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
+    },
+    apiSecret: process.env.API_SECRET
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'frutata-front-nuxt',
@@ -34,6 +47,9 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://composition-api.nuxtjs.org/getting-started/setup#quick-start
+    '@nuxtjs/composition-api/module',
+    ['@pinia/nuxt', { disableVuex: false }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -67,7 +83,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    // baseURL: '/',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
