@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { useStore } from '~/store/index'
 export default {
     props: {
         packageType: {
@@ -43,6 +44,11 @@ export default {
             type: String,
             default: 'https://via.placeholder.com/150'
         }
+    },
+  data() {
+    return{
+      store: useStore(this.$pinia)
     }
+  }
 }
 </script>
