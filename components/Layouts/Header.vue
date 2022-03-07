@@ -136,8 +136,8 @@ export default {
     return {
       links: [
         {'link': '/', 'name': 'Главная'},
-        {'link': '/products', 'name': 'Продукции'},
         {'link': '/about-us', 'name': 'О компании'},
+        {'link': '/products-all', 'name': 'Продукции'},
         {'link': '/news', 'name': 'Новости'},
         {'link': '/contacts', 'name': 'Контакты'}
       ]
