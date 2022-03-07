@@ -5,13 +5,15 @@
       <div class='flex'>
         <div class='flex flex-wrap flex-col w-1/2 px-4'>
 
-          <iframe class='rounded-20 w-full h-56 mb-6'
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4503888345903!2d69.25662371587268!3d41.3208186792703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b147cca7093%3A0xef83733beeec731b!2z0L_RgNC-0YHQv9C10LrRgiDQndCw0LLQvtC4LCDQotCw0YjQutC10L3Rgiwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1645711833621!5m2!1sru!2s'
-                  style='border:0;' loading='lazy'>
+
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4503888345903!2d69.25662371587268!3d41.3208186792703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b147cca7093%3A0xef83733beeec731b!2z0L_RgNC-0YHQv9C10LrRgiDQndCw0LLQvtC4LCDQotCw0YjQutC10L3Rgiwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1645711833621!5m2!1sru!2s'
+            style='border:0; border-radius: 15px; width: 100%; height: 226px; margin-bottom: 1.5rem' loading='lazy'>
 
           </iframe>
+
           <div class='flex flex-row justify-between w-540'>
-            <div class='flex flex-col'>
+            <div class='flex flex-col w-2/4'>
 
               <div class='flex flex-col Comfortaa mb-12 '>
                 <div class='flex flex-row'><img src='/icon/phone.svg' class='mr-3'>Связьться с нами:</div>
@@ -29,7 +31,7 @@
 
             </div>
 
-            <div class='flex flex-col'>
+            <div class='flex flex-col w-2/4'>
 
               <div class='flex flex-col Comfortaa mb-12 '>
                 <div class='flex flex-row'><img src='/icon/email.svg' class='mr-3'>Почта:</div>
@@ -108,7 +110,7 @@
           </div>
         </div>
         <div class='flex flex-wrap w-1/2 px-3 bg-BGproducts px-4 rounded-20'>
-          <div class='text-50 leading-50 text-black font-bold YanoneKaffeesatz mb-2'> Оставить заявку</div>
+          <div class='text-50 leading-50 text-black font-bold mt-8 YanoneKaffeesatz mb-2'> Оставить заявку</div>
           <div class='Comfortaa'>Оставьте Ваши контактные данные и мы свяжемся с Вами!</div>
           <div>
             <input class='py-4 px-6 mt-6 w-full rounded-xl' placeholder='*Ваше имя'>
@@ -127,9 +129,9 @@
 </template>
 
 <script>
-export default {
-  name: 'contacts'
-}
+  // export default {
+  //   name: 'contacts'
+  // }
 </script>
 
 <style scoped>

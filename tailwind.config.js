@@ -1,6 +1,7 @@
 // const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+    mode: 'jit',
     theme: {
         extend: {
             colors: {
@@ -17,6 +18,10 @@ module.exports = {
                 GreenTo70: 'rgba(245, 250, 243, 0.7)',
                 BGproducts: '#FAFAFA',
                 Red: '#D72323',
+                GreenLight: '#f5fff1',
+                GreyLight: '#212529',
+                Grey27: '#828282',
+                Grey28: '#e9e9e9',
 
             },
             minHeight: {
@@ -32,6 +37,7 @@ module.exports = {
                 13: '0.813rem',
                 15: '0.938rem',
                 28: '1.75rem',
+                32: '2.5rem',
                 50: '3.125rem',
                 100: '6.25rem',
             },
@@ -58,6 +64,9 @@ module.exports = {
             borderRadius: {
                 20: '1.25rem',
                 30: '1.875rem',
+            },
+            scale: {
+              '125': '1.25',
             }
         },
         colors: {
