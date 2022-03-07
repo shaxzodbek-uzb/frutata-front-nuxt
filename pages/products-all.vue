@@ -148,7 +148,6 @@
         <span class="flex bg-primary-900 text-white items-center justify-center Comfortaa text-lg rounded-full border mr-2 w-[60px] h-[60px]">1</span>
         <span class="flex items-center justify-center Comfortaa text-lg rounded-full border border-Grey28 mr-2 w-[60px] h-[60px]">2</span>
       </div>
-
     </div>
   </div>
 </template>
