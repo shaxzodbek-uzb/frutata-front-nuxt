@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center bg-BGproducts rounded-20 w-96 h-540">
     <div class="h-80 my-7">
-      <img :src="image" class="w-full h-full" />
+      <img :src="imageFullPath" class="w-full h-full" />
     </div>
     <p class="text-13 leading-14 text-black m-2.5 text-center">{{ packageType }}</p>
-    <p class="flex flex-grow text-18 leading-20 text-DarkGreen m-2.5 text-center">{{ name }}</p>
+    <p class="flex flex-grow text-18 leading-20 text-DarkGreen m-2.5 text-center">{{ localeName }}</p>
     <div class="flex items-center flex-row my-4">
       <div class="mr-3">
         <p class="text-15 leading-17 text-DarkGreen">Подробнее</p>
@@ -35,14 +35,24 @@ export default {
             type: String,
             default: 'В пакетная упаковка'
         },
-        name: {
-            type: String,
-            default: 'Название товара'
-        },
-        image: {
-            type: String,
-            default: 'https://via.placeholder.com/150'
+        product: {
+            type: Object,
+            default: () => ({})
         }
+    },
+    computed: {
+      imageFullPath(){
+        return this.$config.rootURL+ this.product.image
+      },
+      localeName(){
+        if(this.$i18n.locale === 'ru'){
+          return this.product.name_ru
+        }
+        if(this.$i18n.locale === 'en'){
+          return this.product.name_en
+        }
+        return this.product.name
+      }
     }
 }
 </script>

@@ -16,6 +16,7 @@
       </svg>
     </div>
     <VueSlickCarousel
+      v-if="products.length > 0"
       ref="product-carousel"
       class="w-full"
       :slides-to-show="3"
@@ -23,7 +24,7 @@
       :dots="false"
     >
       <div v-for="product in products" :key="product.name">
-        <ProductCard v-bind="product" />
+        <ProductCard v-bind="{product}" />
       </div>
     </VueSlickCarousel>
     <div class="absolute top-56 -right-20 cursor-pointer" @click="$refs['product-carousel'].next()">
@@ -52,11 +53,16 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   components: { VueSlickCarousel },
-  props: {
-    products: {
-      type: Array,
-      default: () => [],
+  data() {
+    return {
+      products: []
     }
+  },
+  mounted(){
+    this.$axios.get('/products')
+      .then(({data: {products}}) => {
+        this.products = products
+      })
   }
 }
 </script>

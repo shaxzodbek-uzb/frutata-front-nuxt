@@ -32,20 +32,18 @@
             </div>
           </a>
         </div>
-        <ProductSlider :products="products" />
+        <ProductSlider />
       </div>
     </Container>
   </div>
 </template>
 
 <script>
-import products from '~/api/products';
 
 export default {
   data() {
     return {
       loading: false,
-      products
     }
   }
 }

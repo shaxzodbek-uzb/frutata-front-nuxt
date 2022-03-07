@@ -1,16 +1,14 @@
 export default {
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
+      browserBaseURL: process.env.ROOT_URL + 'api/' || 'http://localhost:3000',
     },
-    baseURL: process.env.BASE_URL,
-    storeURL: process.env.STORE_URL,
+    rootURL: process.env.ROOT_URL
   },
   privateRuntimeConfig: {
     axios: {
-      baseURL: process.env.BASE_URL,
-    },
-    apiSecret: process.env.API_SECRET
+      baseURL: process.env.ROOT_URL + 'api/' || 'http://localhost:3000',
+    }
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
