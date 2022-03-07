@@ -1,6 +1,5 @@
 <template>
   <div class="w-full bg-GreenFoot">
-    {{ store.theme }}
     <Container>
       <div class="flex flex-row justify-between items-center py-12 text-white Comfortaa">
         <div class="flex flex-col">
@@ -111,27 +110,16 @@
               </li>
             </ul>
           </div>
-          <div @click="toggleDarkMode()">DarkMode</div>
         </div>
       </div>
+      <ThemeMode />
     </Container>
   </div>
 </template>
 
 <script>
-import { useThemeStore } from '~/store/theme'
 export default {
-  name: "Footer",
-  setup(){
-    const store = useThemeStore()
-    
-    const  toggleDarkMode = () => {
-      store.setTheme();
-    }
-    return {
-      toggleDarkMode,
-    }
-  }
+  name: "Footer"
 }
 </script>
 

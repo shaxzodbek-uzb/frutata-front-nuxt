@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col items-center bg-BGproducts rounded-20 w-96 h-540">
-    {{ store.theme }}
     <div class="h-80 my-7">
       <img :src="image" class="w-full h-full" />
     </div>
@@ -30,7 +29,6 @@
 </template>
 
 <script>
-import { useThemeStore } from '~/store/theme'
 export default {
     props: {
         packageType: {
@@ -45,14 +43,6 @@ export default {
             type: String,
             default: 'https://via.placeholder.com/150'
         }
-    },
-    setup(){
-       const store = useThemeStore()
-
-      return {
-        // you can return the whole store instance to use it in the template
-        store,
-      }
     }
 }
 </script>

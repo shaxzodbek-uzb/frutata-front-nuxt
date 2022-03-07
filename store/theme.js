@@ -9,8 +9,11 @@ export const useThemeStore = defineStore('theme', {
         }
     },
     actions: {
-        setTheme(state) {
-            state.theme = 'dark'
+        setTheme(newValue) {
+            this.theme = newValue
+        },
+        toggleTheme() {
+            this.setTheme(this.theme === 'dark' ? 'light' : 'dark')
         }
     }
 })
