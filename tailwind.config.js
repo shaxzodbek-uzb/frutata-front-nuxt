@@ -46,6 +46,7 @@ module.exports = {
                 17: '1.063rem',
                 28: '1.75rem',
                 50: '3.125rem',
+                60: '3.6rem',
                 100: '6.25rem',
             },
             spacing: {
@@ -77,7 +78,15 @@ module.exports = {
             primary: {
                 900: '#93c92b',
                 500: '#fff2c2',
+                300: '#bfe6ba',
+                200: '#efffed',
                 100: '#fffcf1',
+            },
+            grey: {
+                900: '#585858',
+                500: '#828282',
+                200: '#e9e9e9',
+                100: '#fafafa',
             },
         },
         container: {
