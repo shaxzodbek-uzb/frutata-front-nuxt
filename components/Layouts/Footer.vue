@@ -119,26 +119,19 @@
 </template>
 
 <script>
-import { mapActions } from 'pinia'
-import { useStore } from '~/store/index'
+import { useThemeStore } from '~/store/theme'
 export default {
   name: "Footer",
-  data() {
-    return{
-      store: useStore(this.$pinia)
+  setup(){
+    const store = useThemeStore()
+    
+    const  toggleDarkMode = () => {
+      store.setTheme();
     }
-    
-  },
-  methods: {
-    toggleDarkMode() {
-      // this.setTheme(this.store,"dark");
-      this.store.theme = 'dark'
-    },
-    
-    ...mapActions(useStore, ['setTheme'])
+    return {
+      toggleDarkMode,
+    }
   }
 }
 </script>
 
-<style lang="postcss">
-</style>

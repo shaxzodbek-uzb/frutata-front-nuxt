@@ -5,10 +5,9 @@
         <div class="flex-1">
           <div class="flex flex-col">
             <div class="mb-4">
-              <p class="text-50 leading-50 text-black font-bold YanoneKaffeesatz">
-                {{ $t('Welcome')}}
-                Производство сублимированных фруктов в Узбекистане
-              </p>
+              <p
+                class="text-50 leading-50 text-black font-bold YanoneKaffeesatz"
+              >Производство сублимированных фруктов в Узбекистане</p>
             </div>
             <div class="mt-4 mb-4">
               <p
