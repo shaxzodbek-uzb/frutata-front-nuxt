@@ -11,9 +11,9 @@
           </div>
           <a href="#" class="flex flex-grow">
             <div class="flex flex-row items-center">
-              <div class="mr-18">
+              <nuxt-link to="products" class="mr-18">
                 <p class="text-15 leading-17 text-DarkGreen">Все продукции</p>
-              </div>
+              </nuxt-link>
               <div>
                 <svg
                   width="30"

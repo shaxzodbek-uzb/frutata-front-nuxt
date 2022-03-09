@@ -137,7 +137,7 @@ export default {
       links: [
         {'link': '/', 'name': 'Главная'},
         {'link': '/about-us', 'name': 'О компании'},
-        {'link': '/products-all', 'name': 'Продукции'},
+        {'link': '/products', 'name': 'Продукции'},
         {'link': '/news', 'name': 'Новости'},
         {'link': '/contacts', 'name': 'Контакты'}
       ]
