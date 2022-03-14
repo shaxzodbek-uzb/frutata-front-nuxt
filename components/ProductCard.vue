@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center bg-BGproducts rounded-20 w-96 h-540">
-    <div class="h-80 my-7">
-      <img :src="imageFullPath" class="w-full h-full" />
+  <div class="flex flex-col items-center bg-BGproducts rounded-20 w-full">
+    <div class="h-28 sm:h-80 my-7">
+      <img v-if="!loading" :src="imageFullPath" class="w-full h-24 sm:h-full" />
     </div>
     <p class="text-13 leading-14 text-black m-2.5 text-center">{{ packageType }}</p>
     <p class="flex flex-grow text-18 leading-20 text-DarkGreen m-2.5 text-center">{{ localeName }}</p>
@@ -40,10 +40,13 @@ export default {
             default: () => ({})
         }
     },
+    data(){
+      return {
+        imageFullPath: '',
+        loading: true,
+      }
+    },
     computed: {
-      imageFullPath(){
-        return this.$config.rootURL+ this.product.image
-      },
       localeName(){
         if(this.$i18n.locale === 'ru'){
           return this.product.name_ru
@@ -53,6 +56,19 @@ export default {
         }
         return this.product.name
       }
+    },
+    mounted(){
+      this.imageFullPath = this.$config.rootURL+ this.product.image;
+      this.loading = false
+      // this.$axios.$get(this.imageFullPath).then(res =>{
+      //   console.log(res)
+      // })
+      // .catch(() =>{
+      //   // set  placeholder image service url
+      //   this.imageFullPath = 'https://via.placeholder.com/300x300'
+      // }).finally(() =>{
+      //   this.loading = false
+      // })
     }
 }
 </script>

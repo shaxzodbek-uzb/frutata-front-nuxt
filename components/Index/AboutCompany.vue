@@ -15,10 +15,8 @@
               <p class="text-50 leading-50 text-black font-bold YanoneKaffeesatz">О компании</p>
             </div>
             <div>
-              <a href="#" class="flex flex-row items-center">
-                <nuxt-link to="about-us" class="mr-18">
-                  <p class="text-15 leading-17 text-DarkGreen">Подробнее</p>
-                </nuxt-link>
+              <nuxt-link to="about-us" class="flex flex-row items-center">
+                <p class="mr-18 text-15 leading-17 text-DarkGreen">Подробнее</p>
                 <div>
                   <svg
                     width="30"
@@ -34,7 +32,7 @@
                     />
                   </svg>
                 </div>
-              </a>
+              </nuxt-link>
             </div>
           </div>
           <div class="flex">

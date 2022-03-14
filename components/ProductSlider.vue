@@ -1,11 +1,9 @@
 <template>
-  <client-only>
-    <Slider v-if="products.length" :items-count="products.length">
-      <div v-for="product in products" :key="product.name">
-        <ProductCard v-bind="{product}" />
-      </div>
-    </Slider>
-  </client-only>
+  <Slider v-if="products.length" :items-count="products.length">
+    <div v-for="product in products" :key="product.name">
+      <ProductCard v-bind="{product}" />
+    </div>
+  </Slider>
 </template>
 
 <script>
@@ -17,9 +15,9 @@ export default {
     }
   },
   mounted(){
-    this.$axios.get('/products')
-      .then(({data: {products}}) => {
-        this.products = products
+    this.$axios.get('/products',  {params: { limit: 10, pack_type: 'pack'}})
+      .then(({data: {products: {data}}}) => {
+        this.products = data
       })
   }
 }

@@ -9,11 +9,10 @@
               <span class="text-Green">Frutata</span>
             </p>
           </div>
-          <a href="#" class="flex flex-grow">
+          <nuxt-link to="products" class="flex flex-grow">
             <div class="flex flex-row items-center">
-              <nuxt-link to="products" class="mr-18">
-                <p class="text-15 leading-17 text-DarkGreen">Все продукции</p>
-              </nuxt-link>
+              <p class="mr-18 text-15 leading-17 text-DarkGreen">Все продукции</p>
+
               <div>
                 <svg
                   width="30"
@@ -30,7 +29,7 @@
                 </svg>
               </div>
             </div>
-          </a>
+          </nuxt-link>
         </div>
         <ProductSlider />
       </div>

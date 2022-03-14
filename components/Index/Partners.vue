@@ -15,22 +15,15 @@
             >Компания Frutata — новичок на рынке Узбекистана, однако несмотря на свою короткую историю мы являемся одним.</p>
           </div>
         </div>
-        <client-only>
-          <Slider :items-count="4">
-            <a href="#" class="h-32 bg-BGproducts rounded-20">
-              <img src="/partners-01.png" class="h-full block mx-auto" />
-            </a>
-            <a href="#" class="h-32 bg-BGproducts rounded-20">
-              <img src="/partners-02.png" class="h-full block mx-auto" />
-            </a>
-            <a href="#" class="h-32 bg-BGproducts rounded-20">
-              <img src="/partners-03.png" class="h-full block mx-auto" />
-            </a>
-            <a href="#" class="h-32 bg-BGproducts rounded-20">
-              <img src="/partners-04.png" class="h-full block mx-auto" />
-            </a>
-          </Slider>
-        </client-only>
+        <Slider :items-count="partners.length">
+          <div
+            v-for="partner in partners"
+            :key="partner.id"
+            class="h-32 bg-BGproducts rounded-20 p-4"
+          >
+            <img :src="$config.rootURL + partner.image" class="h-full block mx-auto" />
+          </div>
+        </Slider>
       </div>
     </Container>
   </div>
@@ -38,7 +31,17 @@
 
 <script>
 export default {
-  name: "Partners"
+  name: "Partners",
+  data(){
+    return {
+      partners: []
+    }
+  },
+  mounted(){
+    this.$axios.get('/partners').then(({data: {partners}}) => {
+      this.partners = partners
+    })
+  }
 }
 </script>
 

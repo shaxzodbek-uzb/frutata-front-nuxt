@@ -112,7 +112,6 @@
           </div>
         </div>
       </div>
-      <ThemeMode />
     </Container>
   </div>
 </template>

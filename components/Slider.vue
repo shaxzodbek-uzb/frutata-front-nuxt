@@ -72,16 +72,22 @@ export default {
 }
 </script>
 
+<style lang="css">
+.slick-list {
+  margin: -0.5rem !important;
+}
+.slick-slide {
+  padding: 0.5rem !important;
+}
+</style>
 // sass style sheet
 <style lang="sass">
 @tailwind base
-@tailwind components
-@tailwind utilities
-@layer components
+
 .custom-slider-dots
-    @apply bg-grey-200
+  @apply bg-grey-200
 .slick-active>.custom-slider-dots
-    @apply bg-primary-900
+  @apply bg-primary-900
 .slick-dots
-    @apply relative mx-auto mt-8 w-40 flex justify-between
+  @apply relative mx-auto mt-8 w-full flex justify-between
 </style>
